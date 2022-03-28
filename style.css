@@ -1,0 +1,80 @@
+
+body{
+    background-color: rgb(105, 105, 105);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    text-align: center;
+    width: 70%;
+    font-size: 60px;
+    margin: 50px;
+    margin-left: 28vh;
+}
+
+.tempat{
+    justify-content: center;
+    display: flex;
+}
+.piano{
+    justify-content: center;
+    background-color: #333;
+    border-radius:10px ;
+}
+.tombol{
+    background-color: rgb(253, 253, 253);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius:50% ;
+    padding: 15px 15px;
+    float: right;
+}
+.tombol:hover{
+    background-color: rgb(238, 188, 50);
+}
+.tombol2{
+    background-color: rgb(241, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius:50% ;
+    padding: 15px 15px;
+    float: right;
+}
+.tombol2:hover{
+    background-color: rgb(238, 188, 50);
+}
+.tuts{
+    display: flex;
+    margin: 0 20px 20px 20px;
+    border-top:4px solid rgb(131, 124, 124) ;
+    background-color: gray;
+}
+.key{
+    height: calc(var(--width)*4);
+    width: var(--width);
+    border-radius: 0 0 20px 20px;
+}
+.putih{
+    --width:70px;
+    background-color: white;
+    border: 1px solid;
+}
+.putih.aktif{
+    background-color: rgb(252, 241, 142);
+}
+.piano.warna{
+    background-color: aqua;
+}
+
+
+.hitam{
+    background-color: black;
+    --width: 40px;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
+}
+.hitam.aktif{
+    background-color: rgb(104, 104, 104);
+}
